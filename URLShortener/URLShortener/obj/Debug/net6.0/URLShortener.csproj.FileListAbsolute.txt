@@ -34,3 +34,4 @@ C:\Ismail Projects\.NetCore\url-shortener\URLShortener\URLShortener\obj\Debug\ne
 C:\Ismail Projects\.NetCore\url-shortener\URLShortener\URLShortener\obj\Debug\net6.0\URLShortener.pdb
 C:\Ismail Projects\.NetCore\url-shortener\URLShortener\URLShortener\obj\Debug\net6.0\URLShortener.genruntimeconfig.cache
 C:\Ismail Projects\.NetCore\url-shortener\URLShortener\URLShortener\obj\Debug\net6.0\ref\URLShortener.dll
+C:\Ismail Projects\.NetCore\url-shortener\URLShortener\URLShortener\bin\Debug\net6.0\Newtonsoft.Json.dll

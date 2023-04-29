@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ra/pnmPUnIULfc8I1N+rNXxIPDibfXzf34ySRGDx7E+mVN0MrRYAmdTtjSIgeo1RHTUs+ZzDiZEm7wGcygEEvQ==",
+  "dgSpecHash": "sXBaqYx+1DPoHF/SQjfao8QOnEABu++dz8V1olTM54rQswWN+PV7Sdo+OhPxpXUlb1esCvwm9uUEIUp5vqt9hQ==",
   "success": true,
   "projectFilePath": "C:\\Ismail Projects\\.NetCore\\url-shortener\\URLShortener\\URLShortener\\URLShortener.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

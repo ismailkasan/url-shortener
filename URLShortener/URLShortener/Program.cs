@@ -48,4 +48,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Add custom middlewares
+app.ConfigureCustomRedirectionMiddleware();
+app.ConfigureCustomExceptionMiddleware();
+
 app.Run();
