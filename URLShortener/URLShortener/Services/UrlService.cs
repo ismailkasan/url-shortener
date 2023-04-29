@@ -3,20 +3,37 @@ using URLShortener.Data;
 
 namespace URLShortener.Services
 {
+    /// <summary>
+    /// URl business service
+    /// </summary>
     public class UrlService : IUrlService
     {
+        /// <summary>
+        /// Url repository object
+        /// </summary>
         private readonly IUrlRepository<UrlModel> _urlModelRepository;
+
+        /// <summary>
+        /// HttpContextAccessor object
+        /// </summary>
         private readonly IHttpContextAccessor _httpContext;
+
+        /// <summary>
+        /// Constructor of Url Service
+        /// </summary>
+        /// <param name="repository"></param>
+        /// <param name="httpContext"></param>
         public UrlService(IUrlRepository<UrlModel> repository, IHttpContextAccessor httpContext)
         {
             _urlModelRepository = repository;
             _httpContext = httpContext;
         }
+
         /// <summary>
-        /// Create a new short url and save it to database.
+        /// Create a new short url and insert into database.
         /// </summary>
         /// <param name="model"></param>
-        /// <returns></returns>
+        /// <returns>Task<ServiceResult<UrlResponseDto>></returns>
         public async Task<ServiceResult<UrlResponseDto>> CreateShortUrl(UrlRequestDto model)
         {
             if (!Uri.TryCreate(model.LongUrl, UriKind.Absolute, out var validLongUrl))
@@ -66,9 +83,9 @@ namespace URLShortener.Services
         /// And checks this segment whether exist in database or does not exist.
         /// </summary>
         /// <param name="guid"></param>
-        /// <returns></returns>
+        /// <returns>Task<string></returns>
         private async Task<string> CreateAndGuaranteeGuid(string? guid = null)
-        {          
+        {
             if (guid == null)
             {
                 string newGuid = Helpers.CreateGuid(Constant.ShortLinkSegmentLength);
@@ -92,7 +109,7 @@ namespace URLShortener.Services
         /// Generates uniqe url segment and checks this segment whether exist in database or does not exist.
         /// </summary>
         /// <param name="key"></param>
-        /// <returns></returns>
+        /// <returns>Task<string></returns>
         private async Task<string> GenerateStringKey(string? key = null)
         {
             if (key == null)

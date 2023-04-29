@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Add constroller and Filters.
 #pragma warning disable CS0618 // Type or member is obsolete
 builder.Services.AddControllers(opt =>
             {

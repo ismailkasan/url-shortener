@@ -3,6 +3,9 @@ using System.Net;
 using URLShortener.Data;
 namespace URLShortener.Common
 {
+    /// <summary>
+    /// Custom middleware is to catch all exceptions on whole application.Then, handles exceptions and return ServiceResult model.
+    /// </summary>
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
@@ -24,11 +27,18 @@ namespace URLShortener.Common
             }
         }
 
+        /// <summary>
+        /// Handle exception and tries to add log to db.
+        /// If it couldn't insert any logs to db, it can consume third part application services(file log,elastich search, vs.). 
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="exception"></param>
+        /// <param name="logRepository"></param>
+        /// <returns>Task</returns>
         private static async Task HandleExceptionAsync(HttpContext context, Exception exception, IBaseRepository<Log> logRepository)
         {
             try
             {
-
                 // create guid
                 string errorCode = Helpers.CreateGuid(8);
 
@@ -54,12 +64,10 @@ namespace URLShortener.Common
                 var result = new ServiceResult("General Error Occured." + $"Error code: {errorCode}", ResultType.Error);
                 await context.Response.WriteAsync(JsonConvert.SerializeObject(result)).ConfigureAwait(false);
                 return;
-
             }
             catch
             {
-                // İf an exception fires when to add log in database we can send log to third party service such Elastich Search Service.
-             
+                // if any exception fires here when it tries to add any logs in database, we can send logs to third party service such Elastich Search Service.
                 //TODO: add another service
                 var result = new ServiceResult("General Error Occured.", ResultType.Error);
                 await context.Response.WriteAsync(JsonConvert.SerializeObject(result)).ConfigureAwait(false);
@@ -67,5 +75,4 @@ namespace URLShortener.Common
             }
         }
     }
-
 }

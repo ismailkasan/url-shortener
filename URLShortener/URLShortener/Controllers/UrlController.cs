@@ -4,6 +4,9 @@ using URLShortener.Services;
 
 namespace UrlDemo.Controllers
 {
+    /// <summary>
+    /// Url Controller endpoint
+    /// </summary>
     [Route("api/v1/[controller]")]
     [ApiController]
     public class UrlController : ControllerBase
@@ -14,13 +17,16 @@ namespace UrlDemo.Controllers
             _urlService = urlService;
         }
 
+        /// <summary>
+        /// Create short url endpoint
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         [Route("CreateShortUrl")]
         public async Task<ServiceResult> CreateShortUrl([FromBody] UrlRequestDto model)
         {
             return await _urlService.CreateShortUrl(model);
         }
-
-    
     }
 }

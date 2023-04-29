@@ -3,6 +3,9 @@ using URLShortener.Data;
 
 namespace URLShortener.Common
 {
+    /// <summary>
+    /// Custom middleware is to catch all request(except api request) on whole application.Then, gets the long url from db accordingto short url and redirect to its original long url.
+    /// </summary>
     public class RedirectionMiddleware
     {
         private readonly RequestDelegate _next;
@@ -24,6 +27,12 @@ namespace URLShortener.Common
             }
         }
 
+        /// <summary>
+        /// Handle request and gets the long url from db accordingto short url and redirect to its original long url.
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="urlRepository"></param>
+        /// <returns>Task</returns>
         private static async Task HandleRedirectionAsync(HttpContext context, IUrlRepository<UrlModel> urlRepository)
         {
             var segment = context.Request.Path.ToUriComponent().Trim('/');

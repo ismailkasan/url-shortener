@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace URLShortener.Common
 {
+    /// <summary>
+    /// Filter for validator action. Checks model state and return ServiceResult for all validation messages.
+    /// </summary>
     public class ValidatorActionFilter : IActionFilter
     {
         public void OnActionExecuting(ActionExecutingContext context)
@@ -18,7 +21,7 @@ namespace URLShortener.Common
                     }
                 }
                 var msj = String.Join(", ", validationMessages.ToArray());
-                context.Result = new BadRequestObjectResult(new ServiceResult(msj,ResultType.Warning))
+                context.Result = new BadRequestObjectResult(new ServiceResult(msj, ResultType.Warning))
                 {
                     StatusCode = StatusCodes.Status200OK
                 };

@@ -2,6 +2,9 @@
 
 namespace URLShortener.Common
 {
+    /// <summary>
+    /// ServiceResult ResultType
+    /// </summary>
     public enum ResultType
     {
         [Display(Name = "Success")]

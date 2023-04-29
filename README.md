@@ -9,16 +9,19 @@ This is a .NET restful URL shortener api with redirection middleware. It creates
 - **Validation**      : [FluentValidation.AspNetCore V11.3.0](https://www.nuget.org/packages/FluentValidation.AspNetCore) package is added to validate inputs of user and return good meaning messages.
 - **Persistent Data** : [LiteDB V5.0.16](https://www.nuget.org/packages/LiteDB) package is added to save url into db.
 
+## Test
+- **Moq Test**  : **MSTest** test project with [Moq v4.18.4](https://www.nuget.org/packages/Moq) package to mocking repositories and helpers. 
+- **Integration Test**  : XUnit test project with [Microsoft.AspNetCore.TestHost v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.TestHost/6.0.0) and [Microsoft.AspNetCore.Mvc.Testing v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Testing/6.0.0) packages were inluded to create test server. I implement **Singleton Desing Pattern** with **Thrade safe locking mechanism** to create a uniqe test server.Then,I can run all the test methods on Visual Studio Test Explorer. 
 
 ## Demo
 
-* Create short url
+* Create short url.
 
-![alt text](https://github.com/ismailkasan/url-shortener/blob/media/shorturl-1.png?raw=true)
+![alt text](https://raw.githubusercontent.com/ismailkasan/url-shortener/main/media/shorturl-1.png?raw=true)
 
 * Redirect to original url.
 
-![alt text](https://github.com/ismailkasan/url-shortener/blob/media/redirect.gif?raw=true)
+![alt text](https://raw.githubusercontent.com/ismailkasan/url-shortener/main/media/redirect.gif?raw=true)
 
 ## 🚀 About Me
 I'm a full stack developer. I've been dealing with software since 2016. I worked on a lot of projects so far. My strongest skills are C#, .Net
