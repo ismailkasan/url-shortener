@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "4f0iHqP2fvRdjRyz5P2tFiu9o39e5cV/z2b2zoPX/2yPUtVn78vdHHFuiQH5tcK3GCyj1ElflFxrmLUvXubfrw==",
+  "dgSpecHash": "Ra/pnmPUnIULfc8I1N+rNXxIPDibfXzf34ySRGDx7E+mVN0MrRYAmdTtjSIgeo1RHTUs+ZzDiZEm7wGcygEEvQ==",
   "success": true,
   "projectFilePath": "C:\\Ismail Projects\\.NetCore\\url-shortener\\URLShortener\\URLShortener\\URLShortener.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\litedb\\5.0.16\\litedb.5.0.16.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ismailkasan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
