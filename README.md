@@ -22,7 +22,3 @@ This is a .NET restful URL shortener api with redirection middleware. It creates
 * Redirect to original url.
 
 ![alt text](https://raw.githubusercontent.com/ismailkasan/url-shortener/main/media/redirect.gif?raw=true)
-
-## 🚀 About Me
-I'm a full stack developer. I've been dealing with software since 2016. I worked on a lot of projects so far. My strongest skills are C#, .Net
-Core, MsSql, javaScript, TypeScript and Angular2+. Also, I am working on sample like this extension Nodejs, MongoDb projects.
