@@ -11,7 +11,7 @@ This is a .NET restful URL shortener api with redirection middleware. It creates
 
 ## Test
 - **Moq Test**  : **MSTest** test project with [Moq v4.18.4](https://www.nuget.org/packages/Moq) package to mocking repositories and helpers. 
-- **Integration Test**  : XUnit test project with [Microsoft.AspNetCore.TestHost v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.TestHost/6.0.0) and [Microsoft.AspNetCore.Mvc.Testing v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Testing/6.0.0) packages were inluded to create test server. I implement **Singleton Desing Pattern** with **Thrade safe locking mechanism** to create a uniqe test server.Then,I can run all the test methods on Visual Studio Test Explorer. 
+- **Integration Test**  : XUnit test project with [Microsoft.AspNetCore.TestHost v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.TestHost/6.0.0) and [Microsoft.AspNetCore.Mvc.Testing v6.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Testing/6.0.0) packages were inluded to create test server. I implement [Singleton Desing Pattern](https://medium.com/@ismailkasan/singleton-design-pattern-f4963ddc393f) with **Thrade safe locking mechanism** to create a uniqe test server.Then,I can run all the test methods on Visual Studio Test Explorer. 
 
 ## Demo
 
