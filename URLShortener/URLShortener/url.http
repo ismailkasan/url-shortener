@@ -1,0 +1,13 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+###
+# create short url
+
+POST http://localhost:5017/api/v1/url/CreateShortUrl
+Content-Type: application/json
+
+{
+    "longUrl":"https://medium.com/@atakankorez/bye-bye-swagger-and-postman-built-in-rest-client-for-vs-2022-9be7df9322e9",
+    "isCustomUrl":false,
+    "CustomSegment":""
+}

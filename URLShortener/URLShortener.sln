@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "URLShortener", "URLShortener\URLShortener.csproj", "{8BDEB973-74F9-4C87-8D18-65656BE353EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLShortener.Test", "URLShortener.Test\URLShortener.Test.csproj", "{E65A4575-E3E2-49F9-87EA-CFC1A7374DBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "URLShortener.Test", "URLShortener.Test\URLShortener.Test.csproj", "{E65A4575-E3E2-49F9-87EA-CFC1A7374DBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URLShortener.IntegrationTest", "URLShortener.IntegrationTest\URLShortener.IntegrationTest.csproj", "{9064B9AB-BA0F-45CE-A2D5-BAC26A12010A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "URLShortener.IntegrationTest", "URLShortener.IntegrationTest\URLShortener.IntegrationTest.csproj", "{9064B9AB-BA0F-45CE-A2D5-BAC26A12010A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
